@@ -19,3 +19,87 @@ body {
     background-color: #ffffff;
 }
 
+.top {
+    display: flex;
+    flex-direction: column;
+  }
+  .top__img {
+    width: 100%;
+  }
+  .top_title {
+    margin: 0.5em 0;
+  }
+  .top__text {
+    margin: 1em 0;
+  }
+  .top_button {
+    margin: 1em 0;
+  }
+
+h1,
+h2,
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+
+h1 {
+  font-size: 5.8rem;
+  line-height: 5rem;
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    padding: 1em 1.5em;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  .button::after {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background-image: url("./assets/icon-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 50%, 50%;
+    content: "";
+  }
+  .button-primary {
+    background-color: #151515;
+  }
+  .button-primary:hover {
+    background-color: #d5966c;
+  }
+  .button-primary::after {
+    left: 100%;
+    background-color: #d5966c;
+    background-image: url("./assets/icon-arrow-right.svg");
+  }
+  .button-primary:hover::after {
+    background-color: #151515;
+  }
+  .button-secondary {
+    background-color: #151515;
+  }
+  .button-secondary:hover {
+    background-color: #d5966c;
+  }
+  .button-secondary::after {
+    right: 100%;
+    background-color: #d5966c;
+    background-image: url("./assets/icon-arrow-left.svg");
+  }
+  .button-secondary:hover::after {
+    background-color: #151515;
+  }
